@@ -1,0 +1,45 @@
+site_name: Geocat Dokumentation
+docs_dir: '../../docs/de'
+site_dir: '../../generated/de'
+
+theme:
+  name: material
+  custom_dir: '../../overrides/'
+  logo: assets/img/geocat_logo.png
+  language: de
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  alternate:
+    - name: Deutsch
+      link: /geocat-techdoc-ml/de/
+      lang: de
+    - name: Français
+      link: /geocat-techdoc-ml/fr/
+      lang: fr
+
+plugins:
+  - search:
+      lang: de
